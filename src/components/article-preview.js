@@ -23,7 +23,9 @@ const ArticlePreview = ({ posts }) => {
                   </Link>
                 </div>
                 <div className={styles.cardDesc}>
-                  <h2 className={styles.title}>{post.title}</h2>
+                  <Link to={`/blog/${post.slug}`} className={styles.link}>
+                    <h2 className={styles.title}>{post.title}</h2>
+                  </Link>
                   <div
                     dangerouslySetInnerHTML={{
                       __html: post.description.childMarkdownRemark.html,
