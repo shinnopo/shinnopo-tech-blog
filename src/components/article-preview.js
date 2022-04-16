@@ -16,18 +16,24 @@ const ArticlePreview = ({ posts }) => {
         {posts.map((post) => {
           return (
             <li key={post.slug}>
-              <Link to={`/blog/${post.slug}`} className={styles.link}>
-                <GatsbyImage alt="" image={post.heroImage.gatsbyImageData} />
-                <h2 className={styles.title}>{post.title}</h2>
-              </Link>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: post.description.childMarkdownRemark.html,
-                }}
-              />
-              <div className={styles.meta}>
-                <small className="meta">{post.publishDate}</small>
-                <Tags tags={post.tags} />
+              <div className={styles.cardWrapper}>
+                <div>
+                  <Link to={`/blog/${post.slug}`} className={styles.link}>
+                    <GatsbyImage alt="" image={post.heroImage.gatsbyImageData} className={styles.imageWrapper} />
+                  </Link>
+                </div>
+                <div className={styles.cardDesc}>
+                  <h2 className={styles.title}>{post.title}</h2>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: post.description.childMarkdownRemark.html,
+                    }}
+                  />
+                  <div className={styles.meta}>
+                    <small className="meta">{post.publishDate}</small>
+                    <Tags tags={post.tags} />
+                  </div>
+                </div>
               </div>
             </li>
           )
