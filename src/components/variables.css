@@ -9,9 +9,9 @@
   --font-serif: 'Times New Roman', Times, serif;
 
   /* palette */
-  --white: #fff;
-  --black: #000;
-  --black-fade-5: rgba(0, 0, 0, 0.05);
+  --white: #D8D8D8;
+  --black: #010101;
+  --black-fade-5: #606060;
 
   /* radii */
   --radius-sm: 4px;
@@ -53,12 +53,12 @@
   /* tokens */
   /* colors */
   --primary: #4a90e2;
-  --background: var(--white);
+  --background: var(--black);
   --border: var(--black-fade-5);
 
   /* text */
   /* color */
-  --text-color: var(--black);
+  --text-color: var(--white);
   /* size */
   --text-lead: var(--text-lg);
   --text-prose: var(--text-md);
