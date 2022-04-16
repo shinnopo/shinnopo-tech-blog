@@ -1,0 +1,18 @@
+.title-wrapper {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.article {
+  display: grid;
+  font-size: var(--text-prose);
+  gap: var(--space-xl);
+  letter-spacing: var(--text-prose-tracking);
+  line-height: var(--loose);
+}
+
+.title {
+  letter-spacing: -0.012em;
+  font-weight: var(--extrabold);
+  line-height: var(--solid);
+}
