@@ -5,7 +5,7 @@
 
 .tag {
   background-color: var(--black-fade-5);
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: var(--radius-sm);
   line-height: var(--solid);
   padding: var(--space-sm) var(--space-md);
